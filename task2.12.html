@@ -9,7 +9,6 @@
             display: flex;
             background-color: aqua;
             border: solid 2px darkgreen;
-            padding-right: 10px;           
         }
         .left-list {
             background-color: bisque;
@@ -19,7 +18,17 @@
         }
         .right-text {
             background-color: darkgray;
+            margin: 0 10px;
             width: calc(100% - 25%);
+        }
+        @media(max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+            .right-text {
+                float: left;
+                margin: 0;
+            }
         }
     </style>
 
